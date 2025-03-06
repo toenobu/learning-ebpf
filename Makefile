@@ -2,6 +2,9 @@
 
 VM_NAME := learning-ebpf
 
+init:
+	limactl start --name $(VM_NAME) learning-ebpf.yaml
+
 start:
 	limactl start $(VM_NAME)
 
